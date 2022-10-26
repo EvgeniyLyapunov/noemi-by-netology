@@ -1,5 +1,6 @@
 :root {
   --main-color: #b59f5b;
+  --main-color-opacity: rgba(181, 159, 91, 0.6);
   --input-bg: #f4f7f6;
   --focus-color-dark: #323232;
 }
@@ -52,3 +53,25 @@ ul {
 body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
+
+.title {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0f0d0e;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 4px;
+  background-color: var(--main-color);
+  opacity: 0.4;
+}
+
