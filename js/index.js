@@ -14,5 +14,24 @@ window.addEventListener("DOMContentLoaded", () => {
     stickBottom.classList.toggle("burger__stick-bottom_active");
   });
 
+  // modal window (popup)
+  const modalTimerId = setTimeout(() => openModal(".modal__overlay"), 5000);
+  const closeBtn = document.querySelector(".modal__close");
+
+  closeBtn.addEventListener("click", () => closeModal(".modal__overlay"));
+  
+  function openModal(modalSelector) {
+    const modal = document.querySelector(modalSelector);
+    modal.classList.remove("hide");
+    document.body.style.overflow = "hidden";
+  }
+  
+  function closeModal(modalSelector) {
+    const modal = document.querySelector(modalSelector);
+    modal.classList.add("hide");
+    document.body.style.overflow = "";
+  }
+  
+        
 
 });

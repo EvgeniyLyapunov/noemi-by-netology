@@ -1,0 +1,93 @@
+/* section trend */
+
+.trend {
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+.trend__title {
+  margin-bottom: 36px;
+}
+
+.trend__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.trend__item {
+  position: relative;
+  display: flex;
+  align-items: end;
+  min-height: 230px;
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 3px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trend__item :last-child {
+  margin-bottom: 0;
+}
+
+.trend__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.trend__item-first {
+  background-image: url("../../img/trend1.jpg")
+}
+
+.trend__item-second {
+  background-image: url("../../img/trend2.jpg")
+}
+
+.trend__item-thirth {
+  background-image: url("../../img/trend3.jpg")
+}
+
+.trend__item-fourth {
+  background-image: url("../../img/trend4.jpg")
+}
+
+.trend__card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 33px 23px 30px 23px;
+  border: 3px solid var(--main-color-opacity);
+  z-index: 1;
+}
+
+.trend__card-tegs {
+  display: flex;
+}
+
+.trend__teg {
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.trend__teg:last-child {
+  margin-right: 0;
+}
+
+.trend__card-heading {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
