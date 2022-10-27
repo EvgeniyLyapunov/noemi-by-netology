@@ -83,7 +83,7 @@ body {
   opacity: 0.4;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 641px) {
   .container {
     max-width: 960px;
     margin: 0 auto;
@@ -92,6 +92,26 @@ body {
 
   .title {
     font-size: 18px;
+  }
+  
+  .title-fz14 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title-fz14 {
+    font-size: 14px;
   }
   
 }
