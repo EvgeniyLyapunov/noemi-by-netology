@@ -20,13 +20,6 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 0 15px;
-}
-
 .hero__container {
   min-height: 100vh;
   display: flex;
@@ -148,4 +141,56 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+}
+
+/* media */
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 50px;
+    background-image: url(../../img/banner-bg-tablet.jpg);
+  }
+
+  .hero__container {
+    align-items: center;
+  }
+
+  .hero__header {
+    display: flex;
+    flex-direction: row;
+    align-self:flex-start;
+  }
+
+  .hero__logo {
+    width: 156px;
+    height: 34px;
+    object-fit: cover;
+  }
+
+  .hero__logo-link-desktop {
+    display: block;
+  }
+
+  .hero__logo-link-mobile {
+    display: none;
+  }
+
+  .hero__burger-btn {
+    top: 9px;
+    right: 35px;
+  }
+
+  .hero__wrapper {
+    width: unset;
+    padding: 0 31px 84px;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  
 }

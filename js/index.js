@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // modal window (popup)
-  const modalTimerId = setTimeout(() => openModal(".modal__overlay"), 5000);
+  const modalTimerId = setTimeout(() => openModal(".modal__overlay"), 500000);
   const closeBtn = document.querySelector(".modal__close");
 
   closeBtn.addEventListener("click", () => closeModal(".modal__overlay"));

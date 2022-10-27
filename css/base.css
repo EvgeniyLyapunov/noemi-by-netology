@@ -54,6 +54,14 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .title {
   position: relative;
   font-weight: 700;
@@ -73,5 +81,18 @@ body {
   height: 4px;
   background-color: var(--main-color);
   opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+  
 }
 

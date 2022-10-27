@@ -2,7 +2,7 @@
 /* section new */
 
 .new {
-  padding: 0 15px 43px 15px;
+  padding-bottom: 43px;
 }
 
 .new__title {
@@ -106,7 +106,7 @@
 /* section subscribe */
 
 .subscribe {
-  padding: 0 15px 44px 15px;
+  padding-bottom: 44px;
 }
 
 .subscribe__title {
@@ -172,7 +172,7 @@
 
 /* tegs */
 .tegs {
-  padding: 0 15px 44px 15px;
+  padding-bottom: 44px;
 }
 
 .tegs__title {
@@ -187,10 +187,9 @@
 .tegs__item {
   margin-right: 5px;
   margin-bottom: 6px;
-  flex-grow: 1;
 }
 
-.mr-0 {
+.tegs__item:last-child {
   margin-right: 0;
 }
 
@@ -212,7 +211,7 @@
 /* themes */
 
 .themes {
-  padding: 0 15px 44px 15px;
+  padding-bottom: 44px;
 }
 
 .themes__title {
@@ -257,4 +256,13 @@
 .themes__item sup {
   margin-left: 5px;
   color: var(--main-color);
+}
+
+/* media */
+
+@media (min-width: 768px) {
+  .aside {
+    width: 38%;
+  }
+
 }

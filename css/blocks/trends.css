@@ -58,10 +58,17 @@
   background-image: url("../../img/trend4.jpg")
 }
 
+.trend__container {
+  display: flex;
+  flex-grow: 1;
+}
+
 .trend__card {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 100%;
   padding: 33px 23px 30px 23px;
   border: 3px solid var(--main-color-opacity);
   z-index: 1;
@@ -90,4 +97,38 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #fff;
+}
+
+/* media */
+
+@media (min-width: 768px) {
+
+  .trend {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+  
+  .trend__title {
+    margin-bottom: 32px;
+  }
+
+  .trend__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .trend__item {
+    min-height: 248px;
+    width: calc(50% - 2px);
+    padding-bottom: 15px;
+    margin-bottom: 4px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
 }
