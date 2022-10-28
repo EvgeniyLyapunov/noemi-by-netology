@@ -251,7 +251,9 @@
         <ul class="new__list">
           
           <li class="new__item">
-            <img class="new__picture" src="img/new-1.jpg" alt="picture">
+            <div class="new__img-box">
+              <img class="new__picture" src="img/new-1.jpg" alt="picture">
+            </div>
             <div class="new__info">
               <time class="new__time" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="new__heading">
@@ -263,7 +265,9 @@
           </li>
 
           <li class="new__item">
-            <img class="new__picture" src="img/new-2.jpg" alt="picture">
+            <div class="new__img-box">
+              <img class="new__picture" src="img/new-2.jpg" alt="picture">
+            </div>
             <div class="new__info">
               <time class="new__time" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="new__heading">
@@ -275,7 +279,9 @@
           </li>
 
           <li class="new__item">
-            <img class="new__picture" src="img/new-3.jpg" alt="picture">
+            <div class="new__img-box">
+              <img class="new__picture" src="img/new-3.jpg" alt="picture">
+            </div>
             <div class="new__info">
               <time class="new__time" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="new__heading">
@@ -287,7 +293,9 @@
           </li>
 
           <li class="new__item">
-            <img class="new__picture" src="img/new-4.jpg" alt="picture">
+            <div class="new__img-box">
+              <img class="new__picture" src="img/new-4.jpg" alt="picture">
+            </div>
             <div class="new__info">
               <time class="new__time" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="new__heading">
@@ -299,7 +307,9 @@
           </li>
 
           <li class="new__item">
-            <img class="new__picture" src="img/new-5.jpg" alt="picture">
+            <div class="new__img-box">
+              <img class="new__picture" src="img/new-5.jpg" alt="picture">
+            </div>
             <div class="new__info">
               <time class="new__time" datetime="2019-06-14">14 июня 2019</time>
               <h3 class="new__heading">
@@ -375,6 +385,7 @@
         <li class="products__card">
           <div class="products__img-wrapper">
             <picture>
+              <source srcset="img/shop-item-desk1.jpg" media="(min-width: 1200px)">
               <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 641px)">
               <img src="img/shop-item-mobile1.jpg" alt="изображение продукта" class="products__img">
             </picture>
@@ -398,6 +409,7 @@
         <li class="products__card">
           <div class="products__img-wrapper">
             <picture>
+              <source srcset="img/shop-item-desk2.jpg" media="(min-width: 1200px)">
               <source srcset="img/shop-item-tablet2.jpg" media="(min-width: 641px)">
               <img src="img/shop-item-mobile2.jpg" alt="изображение продукта" class="products__img">
             </picture>
@@ -421,6 +433,7 @@
         <li class="products__card">
           <div class="products__img-wrapper">
             <picture>
+              <source srcset="img/shop-item-desk3.jpg" media="(min-width: 1200px)">
               <source srcset="img/shop-item-tablet3.jpg" media="(min-width: 641px)">
               <img src="img/shop-item-mobile3.jpg" alt="изображение продукта" class="products__img">
             </picture>
@@ -484,9 +497,10 @@
         </label>
         <h2 class="title modal__title">Ваш фидбек</h2>
         <form class="modal__form" action="">
-          <label class="modal__label-input">
-            <span class="modal__span-input">Как часто вы заходите на сайт?</span>
-            <input class="modal__input" type="text" placeholder="Почти каждый день">
+          <span class="modal__span-input">Как часто вы заходите на сайт?</span>
+          <input class="modal__input" type="text" placeholder="Почти каждый день" id="modal-input">
+          <label class="modal__label-input" for="modal-input">
+            <span class="visually-hidden">Поле для ввода ответа на вопрос</span>
           </label>
           <span class="modal__span-radio">Вы подписаны на e-mail рассылку?</span>
           <div class="modal__radio-block">
@@ -499,9 +513,10 @@
               <span class="span-no">Нет</span>
             </label>
           </div>
-            <label class="modal__label-textarea">
-              <span class="modal__span-textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-              <textarea class="modal__textarea" placeholder="Может, больше рецептов?"></textarea>
+          <span class="modal__span-textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="modal__textarea" placeholder="Может, больше рецептов?" id="modal-textarea"></textarea>
+            <label class="modal__label-textarea" for="modal-textarea">
+              <span class="visually-hidden">Поле для ввода ответа на вопрос</span>
             </label>
             <input class="modal__submit" type="submit">
         </form>

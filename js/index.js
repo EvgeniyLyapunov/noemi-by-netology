@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // modal window (popup)
-  const modalTimerId = setTimeout(() => openModal(".modal__overlay"), 500000);
+  const modalTimerId = setTimeout(() => openModal(".modal__overlay"), 10000);
   const closeBtn = document.querySelector(".modal__close");
 
   closeBtn.addEventListener("click", () => closeModal(".modal__overlay"));
@@ -24,12 +24,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector(modalSelector);
     modal.classList.remove("hide");
     document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = 17 + "px";
   }
   
   function closeModal(modalSelector) {
     const modal = document.querySelector(modalSelector);
     modal.classList.add("hide");
     document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
   }
   
         

@@ -78,3 +78,21 @@
 .footer__copyright-link:focus {
   color: var(--focus-color-dark);
 }
+
+/* media */
+
+@media (min-width: 1200px) {
+  .footer__copyright {
+    padding-top: 73px;
+    padding-bottom: 43px;
+  }
+
+  .social__link:hover::before {
+    opacity: 1;
+  }
+
+  .footer__copyright-link:hover {
+    color: var(--focus-color-dark);
+  }
+  
+}
